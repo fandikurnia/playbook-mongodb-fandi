@@ -1,0 +1,6 @@
+---
+
+- hosts: mongodb_group
+  gather_facts: yes
+  roles:
+    - greendayonfire.mongodb

@@ -1,0 +1,16 @@
+---
+
+mongodb_conf_dbpath: /var/lib/mongodb
+mongodb_conf_bind_ip: 0.0.0.0
+mongodb_conf_port: 27017
+
+mongodb_login_host: 192.168.2.5
+
+mongodb_net_bindip: 0.0.0.0
+
+mongodb_security_keyfile: /etc/mongodb-keyfile
+
+## replication Options
+mongodb_replication_replset: "testrs"               # Enable replication <setname>[/<optionalseedhostlist>]
+mongodb_replication_replindexprefetch: "all"      # specify index prefetching behavior (if secondary) [none|_id_only|all]
+mongodb_replication_oplogsize: 1024               # specifies a maximum size in megabytes for the replication operation log
